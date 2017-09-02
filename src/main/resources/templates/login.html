@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head  xmlns:th="http://www.thymeleaf.org" class="fixed">
+<meta charset="ISO-8859-1"/>
+<title>Spring Security Authentication</title>
+   <!-- Bootstrap core CSS -->
+    <link href="static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+
+    <!-- Custom fonts for this template -->
+    <link href="static/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+
+    <!-- Plugin CSS -->
+    <link href="static/vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet"/>
+    <link href="static/css/login.css" rel="stylesheet"/>
+
+  
+</head>
+<body>
+
+ <div class="wrapper">
+    <form class="form-signin" th:action="@{/authenticate}" method="post" id="loginForm" name="loginForm">       
+      <h2 class="form-signin-heading">Please login</h2>
+      <input type="text" class="form-control" name="j_username" id="j_username" placeholder="Email Address" required="" autofocus="" />
+      <input type="password" class="form-control" name="j_password" id="j_password" placeholder="Password" required=""/>      
+      <label class="checkbox">
+        <input type="checkbox" value="remember-me" id="rememberMe" name="rememberMe"> Remember me</input>
+      </label>
+      <input type="hidden" name="${_csrf.parameterName}"
+							value="${_csrf.token}" />
+      <button class="btn btn-lg btn-primary btn-block" type="submit">Login</button>   
+    </form>
+  </div>
+
+
+
+  <!-- Bootstrap core JavaScript -->
+    <script src="static/vendor/jquery/jquery.min.js"></script>
+    <script src="static/vendor/popper/popper.min.js"></script>
+    <script src="static/vendor/bootstrap/js/bootstrap.min.js"></script>
+
+</body>
+</html>
