@@ -30,6 +30,24 @@ INSERT INTO user(user_id, first_name, last_name, password) VALUES("admin","admin
 
 4) Run your application
 
+http://localhost:8080/freebies/login
+
+![Alt text](/screens/login.JPG?raw=true "Login")
+
+Dashboard
+
+![Alt text](/screens/dashboard.JPG?raw=true "Dashboard")
+
+Logout
+
+![Alt text](/screens/logout.JPG?raw=true "Logout")
+
+
+
+
+
+
+
 
 
 
