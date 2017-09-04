@@ -38,6 +38,8 @@ Dashboard
 
 ![Alt text](/screens/dashboard.JPG?raw=true "Dashboard")
 
+Thanks to sbAdmin dashboard theme https://github.com/BlackrockDigital/startbootstrap-sb-admin
+
 Logout
 
 ![Alt text](/screens/logout.JPG?raw=true "Logout")
